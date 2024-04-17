@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegação com Imagem de Fundo e Pesquisa</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(https://media.discordapp.net/attachments/1226715813793239041/1227052599098736710/d93c73d64147e8eaf4dccc2a8e0e4200.png?ex=66303b49&is=661dc649&hm=044ba415a0d2a923c7713d05c07879601d934d9d75ee3189278b63fc302cdd1a&=&format=webp&quality=lossless&width=913&height=571); /* Substitua pelo caminho da sua imagem */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: transparent; /* Barra de navegação transparente */
+            color: white;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor legibilidade */
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente ao passar o mouse */
+        }
+
+        /* Estilos para a barra de pesquisa */
+        .search-container {
+            display: flex;
+            align-items: center;
+            background-color: transparent; /* Barra de pesquisa transparente */
+        }
+
+        .search-container input[type="text"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor legibilidade */
+        }
+
+        .search-container input[type="submit"] {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #555;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="search-container">
+        <input type="text" placeholder="Pesquisar...">
+        <input type="submit" value="Buscar">
+    </div>
+    <a href="#">Sobre</a>
+    <a href="#">Catálogo</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Criar Conta</a>
+    <a href="#">Entrar</a>
+</div>
+
+</body>
+</html>
